@@ -1,4 +1,82 @@
+function countBy(x, n) {
+  var z = [];
+  for (i = 1; i <= n; i++) {
+      z.push(x * i);
+  }
+  return z;
+}
 
+
+
+
+function opposite(number) {
+  //your code here
+  
+  if(typeof number== 'number'){
+    return number*(-1);
+  }
+}
+
+function setAlarm(employed, vacation){
+  return ((employed==true)&&(vacation==false))? true: false;
+}  
+
+
+
+
+
+const calculateGrades=(marks)=>{
+   let sum = 0;
+   for(let mark of marks);
+    sum += mark;
+  let Avg =(sum/(marks.length));
+  console.log(Avg);
+}
+
+const showNumbers2 =(limit)=>{
+
+  for( let i=0; i<=limit; i++){
+    const oddEven = (i % 2===0)? "EVEN" : "ODD"
+    console.log(i +" "+ oddEven);
+  }
+}
+const Grade =(position)=>{
+  for (let i=0; i<=position; i++){
+   const pos =(i=1)? "st" : "th"
+
+    console.log(i+pos)
+  }
+}
+
+
+
+
+
+
+function  isLandscape2(width, height){
+
+  return width>height ;
+}
+
+const fizzBuzz2= (input) => 
+{
+  if ((input%3==0)&&(input%5==0)){
+    return "fizzBuzz"
+  }
+else if (input%3==0){
+  return "Fizz";
+}
+else if (input%5==0){
+  return "Buzz";
+}
+else {
+  return "Not a Number"
+}
+
+
+
+}
+ 
  function maps(x){
     return x.map(n => n * 2);
   }
@@ -165,4 +243,5 @@ function smash (words) {
     "use strict";
     return words.join(' ');
 };
- 
+
+
