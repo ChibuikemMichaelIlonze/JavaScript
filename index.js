@@ -77,6 +77,22 @@ function countSheeps(arr) {
   return arr.filter(Boolean).length;
 }
 
+function areYouPlayingBanjo(name) {
+  if (name[0].toLowerCase() === "r") {
+    return name + " plays banjo";
+  } else {
+    return name + " does not play banjo";
+  }
+}
+
+const binaryArrayToNumber = (arr) => {
+  return parseInt(Number(arr.join("")), 2);
+};
+
+const binaryArrayToNumber2 = (arr) => {
+  return parseInt(Number(arr, 2));
+};
+
 const getAge = (inputString) => {
   return parseInt(inputString);
 };
