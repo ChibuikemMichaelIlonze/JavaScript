@@ -103,6 +103,18 @@ function findNextSquare(sq) {
     return Math.pow(sqr, 2);
   } else return -1;
 }
+function isSquare(n){
+  let x = Math.sqrt(n)
+  if(x!=Math.round(x))
+  return false; 
+  else return true;// fix me
+}
+
+function rowSumOddNumbers(n) {
+	// TODO
+  
+    return n*n*n;
+}
 
 function calculateYears(principal, interest, tax, desired) {
   // your code
