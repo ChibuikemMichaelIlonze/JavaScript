@@ -109,6 +109,17 @@ function isSquare(n) {
   else return true;
 }
 
+function getDivisorsCnt(n) {
+  // todo
+  let number = 0;
+  for (let i = 1; i <= n; i++) if (n % i == 0) number++;
+  return number;
+}
+
+function strCount(str, letter) {
+  return str.split(letter).length - 1;
+}
+
 function rowSumOddNumbers(n) {
   // TODO
 
