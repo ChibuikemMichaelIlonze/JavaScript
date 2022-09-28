@@ -334,3 +334,42 @@ function smash(words) {
   "use strict";
   return words.join(" ");
 }
+
+//Calculating leap year
+function leapYear(Years) {
+  if (Years % 4 == 0 && Years % 100 != 0) {
+    return +Years + " is a leap year";
+  }
+  if (Years % 4 == 0 && Years % 400 == 0) {
+    return +Years + " is a leap year";
+  } else return Years + " is not a leap year";
+}
+
+//randomly selecting who will pay for a meal
+function whoWIll(names) {
+  var names = [
+    "Chijioke",
+    "Vladimir",
+    "Chibuike",
+    "Michael",
+    "Chinemerem",
+    "Gabriel",
+  ];
+  var randomPerson = Math.floor(Math.random() * names.length);
+  return names[randomPerson] + " will pay for todays food";
+}
+
+function lyrics(gee) {
+  for (var bottles = 0; bottles < 100; bottles++) {
+    var one = console.log(bottles + " bottles of bear on the wall");
+  }
+  for (var bottles = 99; bottles > 0; bottles--) {
+    var two = console.log(
+      bottles + " on the wall. Take l down, pass it around,"
+    );
+  }
+  for (var bottles = 0; bottles < 99; bottles++) {
+    var three = console.log(bottles + " bottles of bear on the wall");
+  }
+}
+document.querySelector("h1").classList.toggle("hdd");
