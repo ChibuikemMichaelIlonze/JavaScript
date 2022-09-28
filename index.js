@@ -1,3 +1,20 @@
+//code for random dice throws
+function dice() {
+  var sum = Math.random();
+  return Math.floor(sum * 6) + 1;
+}
+
+// code for calculating the bmi of a body
+function bmiCalculator(weight, height) {
+  var bmi = weight / Math.pow(height, 2);
+  return Math.round(bmi);
+}
+//code for calculating love percentage
+function Gee(n) {
+  var n = Math.random();
+  return +(Math.floor(n * 100) + 1) + "%";
+}
+
 function countBy(x, n) {
   var z = [];
   for (i = 1; i <= n; i++) {
