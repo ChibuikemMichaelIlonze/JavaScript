@@ -1,5 +1,5 @@
 //code for random dice throws
-function dice() {
+/*function dice() {
   var sum = Math.random();
   return Math.floor(sum * 6) + 1;
 }
@@ -372,4 +372,34 @@ function lyrics(gee) {
     var three = console.log(bottles + " bottles of bear on the wall");
   }
 }
-document.querySelector("h1").classList.toggle("hdd");
+//calcuating simple mathematics
+function add(num1, num2) {
+  return num1 + num2;
+  }
+  
+  function subtract(num1, num2) {
+  return num1 - num2;
+  }
+  
+  function multiply(num1, num2) {
+  return num1 * num2;
+  }
+  
+  function divide(num1, num2) {
+  return num1 / num2;
+  }
+  
+  function calculator(num1, num2, operator) {
+  return operator(num1, num2);
+  }*/
+
+class Constumer {
+  constructor(name, age, size, height) {
+    this.name = name;
+    this.age = age;
+    this.size = size;
+    this.height = height;
+  }
+}
+var worker1 = new Constumer("Chijioke", "18 years", "80 Kg", "170cm");
+switch
