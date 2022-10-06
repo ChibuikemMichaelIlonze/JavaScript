@@ -402,4 +402,9 @@ class Constumer {
   }
 }
 var worker1 = new Constumer("Chijioke", "18 years", "80 Kg", "170cm");
-switch
+
+
+const max = (number1, number2) => {
+ return number1 > number2 ? number1 : number2;
+  
+};
