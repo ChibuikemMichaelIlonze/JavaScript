@@ -1,8 +1,9 @@
 //code for random dice throws
-/*function dice() {
+function dice() {
   var sum = Math.random();
   return Math.floor(sum * 6) + 1;
 }
+//testing
 
 // code for calculating the bmi of a body
 function bmiCalculator(weight, height) {
@@ -275,13 +276,12 @@ console.log(lrf);
 function someName(name) {
   var count = "number";
   var th = count;
-  if (th === 1);
-  console.log("st");
-  for (let count = 1; count <= 1; count++)
-    console.log("This is the " + count + th + " student:  " + name);
+  if (th === 1) {
+    return `This is the ${count}st  student: ${name}`;
+  } else
+    for (let count = 0; count <= name.length; count++)
+      return `This is the ${count} ${th}  student: ${name}`;
 }
-someName("Kosi");
-someName("Kodili");
 
 console.log("Hello World");
 
@@ -375,23 +375,23 @@ function lyrics(gee) {
 //calcuating simple mathematics
 function add(num1, num2) {
   return num1 + num2;
-  }
-  
-  function subtract(num1, num2) {
+}
+
+function subtract(num1, num2) {
   return num1 - num2;
-  }
-  
-  function multiply(num1, num2) {
+}
+
+function multiply(num1, num2) {
   return num1 * num2;
-  }
-  
-  function divide(num1, num2) {
+}
+
+function divide(num1, num2) {
   return num1 / num2;
-  }
-  
-  function calculator(num1, num2, operator) {
+}
+
+function calculator(num1, num2, operator) {
   return operator(num1, num2);
-  }*/
+}
 
 class Constumer {
   constructor(name, age, size, height) {
@@ -403,8 +403,20 @@ class Constumer {
 }
 var worker1 = new Constumer("Chijioke", "18 years", "80 Kg", "170cm");
 
+//for clonning an object
+var another = { ...Constumer };
 
 const max = (number1, number2) => {
- return number1 > number2 ? number1 : number2;
-  
+  return Math.max;
 };
+
+//code for printing an object
+let address = {
+  street: "202 ikejiani",
+  city: "Enugu",
+  zipCode: "410001",
+};
+function showUp(address) {
+  for (let key in address) console.log(key, address[key]);
+}
+
