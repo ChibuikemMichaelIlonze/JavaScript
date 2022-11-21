@@ -4,6 +4,9 @@ function dice() {
   return Math.floor(sum * 6) + 1;
 }
 //testing
+const listsn=[1,2,3,4,5,6,7]
+ 
+listsn.forEach((list, index )=>console.log(list, index));
 
 // code for calculating the bmi of a body
 function bmiCalculator(weight, height) {
